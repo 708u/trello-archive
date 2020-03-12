@@ -1,4 +1,4 @@
-name: archive-all-done-cards-scheduler
+name: archive-all-done-cards
 
 on:
   schedule:
