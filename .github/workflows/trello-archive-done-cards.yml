@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  build:
+  archive-all-done-cards-scheduler:
     runs-on: ubuntu-latest
 
     steps:
