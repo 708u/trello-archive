@@ -10,4 +10,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: curl -X POST "https://trello.com/1/lists/5dec9476f6a8a639f1e10c41/archiveAllCards?key=${{ secrets.TRELLO_KEY }}&token={{ secrets.TRELLO_TOKEN }}"
+    - run: curl -X POST "https://trello.com/1/lists/${{ secrets.TRELLO_CARD_ID }}/archiveAllCards?key=${{ secrets.TRELLO_KEY   }}&token=${{ secrets.TRELLO_TOKEN }}"
