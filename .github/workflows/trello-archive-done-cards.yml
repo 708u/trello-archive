@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+name: archive-all-done-cards-scheduler
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: curl -X POST "https://trello.com/1/lists/5dec9476f6a8a639f1e10c41/archiveAllCards?key=${{ secrets.TRELLO_KEY }}&token={{ secrets.TRELLO_TOKEN }}"
