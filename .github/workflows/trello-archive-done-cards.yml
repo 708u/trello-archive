@@ -2,7 +2,7 @@ name: archive-all-done-cards
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 3 * * *'
 
 jobs:
   archive-all-done-cards-scheduler:
